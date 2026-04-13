@@ -26,15 +26,10 @@ public class Project_part_1 {
             IO.println("Enter option");
             opt = input.nextInt();
             switch (opt) {
-                case 1: obj.RegisterUser();
-                    break;
-                case 2: obj.loginUser();
-                    break;
-                case 3:
-                    IO.println("Goodbye");
-                    break;
-                default:
-                    IO.println("Invalid option");
+                case 1 -> obj.RegisterUser();
+                case 2 -> obj.loginUser();
+                case 3 -> IO.println("Goodbye");
+                default -> IO.println("Invalid option");
 
             }
         }while (opt!=3 );{
